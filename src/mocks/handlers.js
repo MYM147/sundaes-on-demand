@@ -1,0 +1,14 @@
+import { rest } from "msw";
+
+export const handlers = [
+	rest.get('https://localhost:3030/scoops', (req, res, ctx) => {
+    //return response here
+    return res(
+      ctx.json([
+        { name: 'Chocolate', imagePath: '/images/chocolate.png' },
+        { name: 'Vanilla', imagePath: '/images/vanilla.png' },
+      ])
+    )
+  }),
+];
+
