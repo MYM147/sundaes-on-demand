@@ -32,7 +32,6 @@ export default function SummaryForm() {
 					label={checkboxLabel}
 				/>
 			</Form.Group>
-      <br  />
 			<Button variant='primary' type='submit' disabled={!tcChecked}>
 				Confirm order
 			</Button>
